@@ -4,6 +4,20 @@
 
 A PowerShell script designed to simulate activity on your computer. It can be configured to run on specific days and times, simulating a keypress. The default is Monday-Friday from 8:00AM to 6:00PM. It will check every 5 minutes and press the `Num Lock` key when no keys have been pressed by the user for 2 minutes.
 
+## Quickstart Instructions
+
+See full instructions [below](#installation).
+
+1. Enable powershell execution policy.
+   `Set-ExecutionPolicy RemoteSigned`
+2. Create the folder
+   `Documents\WindowsPowerShell`
+3. Open powershell and create or edit the existing profile
+   `notepad $profile`
+4. Paste the contents from `profile.ps1` into the notepad file that was opened and save the file.
+5. Restart the powershell window.
+6. In the new powershell windows type `idle` to start the program.
+
 ## Prerequisites
 
 Before running the script, ensure that PowerShell is installed on your system and that script execution is enabled. To enable script execution, you may need to modify your PowerShell execution policy.
